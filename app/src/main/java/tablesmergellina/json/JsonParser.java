@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 public final class JsonParser {
 	private JsonParser() {}
 
-	public static List<tablesmergellina.model.Table> readCellsInColumnsInTables(String filePath) throws IOException {
+	public static List<tablesmergellina.model.Table> readTables(String filePath) throws IOException {
 		final JsonMapper mapper = new JsonMapper();
 		final File input = Paths.get(filePath).toFile();
 		List<tablesmergellina.model.Table> tables = new ArrayList<>();
